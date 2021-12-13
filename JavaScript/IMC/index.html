@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o IMC</title>
+    <script>
+        alert("Bem vindo!");
+
+        var peso = parseFloat(prompt("Qual é o seu peso?"));
+        alert(`Seu peso é ${peso}.`)
+        var altura = parseFloat(prompt("Qual é a sua altura?"));
+        alert(`Sua altura é ${altura}.`)
+
+        var imc = parseInt(peso / (altura * altura));
+        alert(`Seu IMC é ${imc}!`)
+
+        document.write(`O IMC calculado a partir do peso ${peso} e da altura ${altura} é de ${imc}`)
+
+        var caloriasGastas = parseInt((0.063 * peso + 2.896) * 239);
+        alert(`Suas calorias gastas diariamente são ${caloriasGastas}!`);
+
+        // const qntDividir = 2;
+
+        // var num1 = parseInt(prompt("Digite um número:"));
+        // var num2 = parseInt(prompt("Digite outro número:"));
+
+        // var resultadoMedia = (num1 + num2) / qntDividir;
+        // alert(`O resultado da média entre os números ${num1} e ${num2} é ${resultadoMedia}`)
+    </script>
+</head>
+<body>
+    <h1>Calculando o IMC</h1>
+</body>
+</html>

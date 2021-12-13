@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World JavaScript</title>
+    <script>
+        //JavaScript é Case Sensitive => Diferencia maiusculas e minusculas
+        //var idadeDoAluno = 17;
+
+        //variável do tipo string (uso de aspas)
+        var nome = prompt("Qual é o seu nome?");
+
+        //variável de idade de tipo number
+        //parseInt => converte pra number do tipo inteiro
+        var idade = parseInt(prompt("Qual a sua idade?")); //do tipo inteiro int
+        //parseFloat => converte pra number do tipo float (decimal)
+        var nota = parseFloat(prompt("Qual foi sua nota?")); //do tipo float
+        
+        var passouDeSemestre = false;
+
+        
+        console.log(nome, typeof nome);
+        console.log(idade, typeof idade);
+        console.log(nota, typeof nota);
+        console.log(typeof passouDeSemestre);
+
+        //Concatenação de textos
+        //document.write("<h2>Meu nome é " + nome + " tenho " + idade + " anos e tirei " + nota + " na média</h2>");
+        document.write(`<h2>Meu nome é ${nome}, tenho ${idade} anos e tirei ${nota} na média</h2>`)
+
+        // alert("Hello World");
+    </script>
+</head>
+<body>
+    <h1>Primeiro código usando JavaScript</h1>
+</body>
+</html>

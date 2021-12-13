@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Festival de Botões</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- div#manipula>p*2 -->
+    <div id="manipula">
+        <p>
+            Caros amigos, o aumento do diálogo entre os diferentes setores produtivos nos obriga à análise dos níveis de motivação departamental. Do mesmo modo, o novo modelo estrutural aqui preconizado facilita a criação do sistema de formação de quadros que corresponde às necessidades. Desta maneira, a adoção de políticas descentralizadoras agrega valor ao estabelecimento do sistema de participação geral.
+        </p>
+        <p class="paragrafo">
+            Assim mesmo, o aumento do diálogo entre os diferentes setores produtivos nos obriga à análise do remanejamento dos quadros funcionais. Do mesmo modo, a execução dos pontos do programa facilita a criação do investimento em reciclagem técnica. Por conseguinte, a percepção das dificuldades agrega valor ao estabelecimento do sistema de participação geral.
+        </p>
+    </div>
+    <br>
+    <hr>
+
+    <h2 class="chamada">Primeiro h2</h2>
+    <h2 class="chamada">Segundo h2</h2>
+    <h2 class="chamada">Terceiro h2</h2>
+    <p class="chamada">teste</p>
+
+    <div>
+        <h3 class="paragrafo">teste</h3>
+    </div>
+
+    <div id="botoes">
+        <!-- Botão 1 - Recarregar Nossa Página -->
+        <!-- Quando clicar no botão ele recarrega a Janela aberta (window) -->
+        <button onclick="window.location.reload()">Atualizar Página</button>
+
+        <!-- Botão 2 - Muda o tamanho da fonte -->
+        <!-- Quando clicar no botão ele muda o tamanho da fonte -->
+        <button onclick="mudarTamanhoFonte()">Mudar tamanho da fonte</button>
+
+        <!-- Botão 3 - Altera a cor da fonte -->
+        <!-- Quando clicar no botão ele muda a cor da fonte -->
+        <button onclick="mudarCorFonte()">Mudar cor da fonte</button>
+
+        <!-- Botão 4 - Altera a cor do fundo da div -->
+        <!-- Quando clicar no botão o fundo da div muda a cor -->
+        <button onclick="mudarCorFundo()">Mudar a cor do fundo</button>
+
+        <!-- Botão 5 - Adiciona o estilo itálico para o texto -->
+        <!-- Quando clicar no botão o estilo da fonte fica itálico -->
+        <button onclick="adicionarItalico()">Deixar em itálico</button>
+
+        <!-- Botão 6 - Deixa o texto em negrito -->
+        <!-- Quando clicar no botão o texto vai ficar em negrito -->
+        <button onclick="mudarNegrito()">Deixar em negrito</button>
+
+        <!-- Botão 7 - Adiciona uma borda -->
+        <!-- Quando clicar no botão a div vai ficar com uma borda -->
+        <button onclick="incluirBorda()">Adicionar borda</button>
+
+        <!-- Botão 8 - Tira a borda -->
+        <!-- Quando clicar no botão tira a borda da div -->
+        <button onclick="tirarBorda()">Tirar a borda</button>
+
+        <!-- Botão 9 - Esconde a div -->
+        <!-- Quando clicar no botão a div é escondida -->
+        <button onclick="esconderDiv()">Esconder a Div</button>
+
+        <!-- Botão 10 - Reaparecer com a div -->
+        <!-- Quando clicar no botão a div é mostrada -->
+        <button onclick="mostrarDiv()">Mostrar a Div</button>
+
+        <!-- Botão 11 - Insere um texto HTML com o valor "NÃOOOOOOOOOO!" no segundo elemento com a classe "chamada" -->
+        <!-- Quando clicar no botão no segundo h2 o html vai mudar -->
+        <button onclick="mudarSegundaChamada()">Mudar texto do segundo h2</button>
+
+        <!-- Botão 12 - Mudar a cor do fundo no elemento com a classe "paragrafo" -->
+        <!-- Quando clicar no botão a cor do fundo do elemento com a classe "paragrafo vai mudar" -->
+        <button onclick="mudarCorFundoParagrafo()">Mudar cor do fundo da classe paragrafo</button>
+
+        <!-- Botão 13 - Muda a cor do fundo de um único botão -->
+        <!-- Quando clicar no botão vai mudar a cor de algum botão -->
+        <button onclick="mudarCorBotaoUnico()">Mudar a cor de um botão</button>
+
+        <!-- Botão 14 - Muda a cor do fundo de todos os botões -->
+        <!-- Quando clicar no botão a cor do fundo de todos irão mudar -->
+        <button onclick="mudarCorBotoes()">Mudar a cor de todos os botões</button>
+
+        <!-- Botão 15 - Conta quantos elementos possuem a classe "botoes" e adicionar um texto na div manipula com esse dado -->
+        <!-- Quando clicar no botão um número vai aparecer na div #manipula -->
+        <button onclick="contarBotoes()">Contar botões</button>
+
+        <!-- Botão 16 - Insere um texto HTML no elemento com a classe "paragrafo" -->
+        <!-- Quando clicar no botão um texto html vai ser adicionado no elemento que tem a classe paragrafo -->
+        <button onclick="inserirTexto('*****')">Inserir texto no paragrafo</button>
+
+        <!-- Botão 17 - Muda a cor do fundo da página inteira -->
+        <!-- Quando clicar no botão a cor do fundo da página inteira (body) muda -->
+        <button onclick="mudarCorPagina()">Muda cor de tudo</button>
+
+        <!-- Botão 18 - Altera a imagem do pc da xuxa pro pc da alienware -->
+        <!-- Quando clicar no botão já pode pegar o diploma de js -->
+        <button onclick="mudarImg('./img/leao.svg')">DIPLOMA</button>
+
+        <!-- Botão 19 - Aciona quase todas as funções -->
+        <!-- Quando clicar no botão a maioria das funções irão acontecer -->
+        <button onclick="acionarTudo()">Acionar (quase) Tudo</button>
+    </div>
+
+    <img src="./img/xuxa.jpg" alt="Computador da Xuxa">
+
+    <script src="./script.js"></script>
+</body>
+</html>
